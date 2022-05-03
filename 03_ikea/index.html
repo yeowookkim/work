@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ikea</title>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <meta
+            name="description"
+            content="IKEA 이달의 인기 제품 한눈에 보기 주문부터 배송까지, 온라인으로 쉽고 편리하게 구매하세요."
+        />
+        <link type="text/css" rel="stylesheet" href="css/reset.css" />
+        <link type="text/css" rel="stylesheet" href="css/base.css" />
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <!-- slick 슬라이더 css -->
+        <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+        <!-- xeicon  -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <!-- blue: #0058a3 / Yellow: #ffdb00-->
+
+        <!-- jq -->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+        <script src="js/slick/slick.js"></script>
+        <!-- js -->
+        <script src="js/newsModal.js" defer></script>
+        <script src="js/display.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div id="wrap">
+            <header id="header">
+                <div id="desk_nav">
+                    <nav class="top_gnb">
+                        <ul>
+                            <li><a href="javascript:void(0);">LOGIN</a></li>
+                            <li><a href="javascript:void(0);">회원가입</a></li>
+                            <li><a href="javascript:void(0);">주문배송조회</a></li>
+                            <li><a href="javascript:void(0);">고객센터</a></li>
+                            <li>
+                                <a href="javascript:void(0);"
+                                    ><i title="cart" class="xi-cart" aria-hidden="true"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><i class="xi-basket"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="bottom_gnb">
+                        <ul>
+                            <li>
+                                <h1><a href="/">ikea</a></h1>
+                            </li>
+                            <li><a>모든 제품</a></li>
+                            <li><a>디지털 쇼룸</a></li>
+                            <li><a>아이디어</a></li>
+                            <li><a>매장안내</a></li>
+                            <li><a>이달의 혜택</a></li>
+                            <li><a >세일정보</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="mobile_nav">
+                    <input type="checkbox" id="panel_wrap" />
+                    <div class="panel_wrap">
+                        <p class="panel_top">
+                            <label for="panel_wrap"><i class="xi-close"></i></label>
+                        </p>
+                        <div id="content_box">
+                            <ul class="list01">
+                                <li><a>모든 제품</a></li>
+                                <li><a>온라인 쇼룸</a></li>
+                                <li><a>아이디어</a></li>
+                                <li><a>매장안내</a></li>
+                                <li><a>이달의 혜택</a></li>
+                                <li><a>세일정보</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="top_gnb">
+                        <label for="panel_wrap"><i class="xi-bars"></i></label>
+                        <a href="">logo</a>
+                        <a href="javascript:void(0);"><i class="xi-profile"></i></a>
+                    </nav>
+                </div>
+            </header>
+            <section id="contents">
+                <div class="index_banner_wrap">
+                    <div class="banner banner_0 ">
+                        <ul class="slick-items">
+                            <li><img src="img/for_slide/sl01.png" alt="#" /></li>
+                            <li><img src="img/for_slide/sl02.png" alt="#" /></li>
+                            <li><img src="img/for_slide/sl03.png" alt="$" /></li>
+                            <li><img src="img/for_slide/sl04.png" alt="#" /></li> 
+                        </ul>
+                        <div class="btn_con">
+                            <div id="pager">
+                                <div class="prev">
+                                    <span class="dis_hidden">이전</span>
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                                <div class="play_con">
+                                    <div class="pause">
+                                        <span class="dis_hidden">일시정지</span>
+                                        <i class="fa-solid fa-pause"></i>
+                                    </div>
+                                    <div class="play">
+                                        <span class="dis_hidden">다시시작</span>
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="next">
+                                    <span class="dis_hidden">다음</span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                                <div class="graph">
+                                    <p id="bar" class="bar"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="innermenu">
+                        <ol>
+                            <li class="innermenu__list">
+                                <a href=#>침실</a>
+                            </li>
+                            <li class="innermenu__list">
+                                <a href=#>거실</a>
+                            </li>
+                            <li class="innermenu__list">
+                                <a href=#>주방</a>
+                            </li>
+                            <li class="innermenu__list">
+                                <a href=#>다이닝</a>
+                            </li>
+                            <li class="innermenu__list">
+                                <a href=#>욕실</a>
+                            </li>
+                            <li class="innermenu__list">
+                                <a href=#>홈오피스</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="banner banner_1">
+                    <div class="banner_title">
+                        <h2>이달의 추천 제품</h2>
+                        <a href="" class="more_button"><i class="xi-angle-right-min"></i>more</a>
+                    </div>
+                    <div class="banner_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="img/monthly/monthly1.png"></div>
+                                    <div class="con">
+                                        <span><b>SONGESAND 송에산드</b></span>
+                                        <span>4칸 서랍장, 82x104 cm</span>
+                                        <strong><i class="xi-won"></i>179,000</strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="img/monthly/monthly2.png"></div>
+                                    <div class="con">
+                                        <span><b>MALM 말름</b></span>
+                                        <span>오토만침대, 150x200 cm</span>
+                                        <strong> <i class="xi-won"></i>499,000</strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="img/monthly/monthly3.png"></div>
+                                    <div class="con">
+                                        <span><b>IKORNNES 이코르네스</b></span>
+                                        <span>전신거울, 52x167 cm</span>
+                                        <strong> <i class="xi-won"></i>169,000</strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="img/monthly/monthly4.png"></div>
+                                    <div class="con">
+                                        <span><b>FJÄLLBO 피엘보</b></span>
+                                        <span>선반유닛, 52x136 cm</span>
+                                        <strong> <i class="xi-won"></i>55,000</strong>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="quick_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon/delivery-truck.png">
+                                    <strong>배송 서비스</strong>
+                                    <span>편리한 배송 옵션을 <br> 살펴보세요</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon/kitchen.png">
+                                    <strong>주방 서비스</strong>
+                                    <span>전문가와 함께 꿈의 주방을 <br>  현실로 만들어 보세요</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon/tools.png">
+                                    <strong>설치 서비스</strong>
+                                    <span>전문가의 주방 및 욕실 설치 <br> 서비스를 받을 수 있어요</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon/3049279.png">
+                                    <strong>조립 서비스</strong>
+                                    <span>IKEA에게 조립을 맡기고 <br> 소중한 시간을 아끼세요</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="recomend_list">
+                        <ul>
+                            <li>
+                                <a href="/img/monthly/monthly1.png" class="thumnail">
+                                    <img
+                                        src="/img/monthly/monthly1.png"
+                                        alt="recommend_item1"
+                                    />
+                                    <p>SONGESAND 송에산드</p>
+                                    <p>4칸 서랍장, 82x104 cm</p>
+                                    <span><i class="xi-won"></i>179,000</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/img/monthly/monthly2.png" class="thumnail"
+                                    ><img
+                                        src="/img/monthly/monthly2.png"
+                                        alt="recommend_item2"
+                                    />
+                                    <p>MALM 말름</p>
+                                    <p>오토만침대, 150x200 cm</p>
+                                    <span> <i class="xi-won"></i>499,000</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="/img/monthly/monthly3.png" class="thumnail"
+                                    ><img
+                                        src="/img/monthly/monthly3.png"
+                                        alt="recommend_item3"
+                                    />
+                                    <p>IKORNNES 이코르네스</p>
+                                    <p>전신거울, 52x167 cm</p>
+                                    <span> <i class="xi-won"></i>169,000</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/img/monthly/monthly4.png" class="thumnail"
+                                    ><img
+                                        src="/img/monthly/monthly4.png"
+                                        alt="recommend_item4"
+                                    />
+                                    <p>FJÄLLBO 피엘보</p>
+                                    <p>선반유닛, 52x136 cm</p>
+                                    <span> <i class="xi-won"></i>55,000</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    -->
+                </div>
+                <div class="banner banner_2">
+                    <div class="banner_title">
+                        <h2>IKEA 뉴스</h2>
+                        <a href="" class="more_button"
+                            ><i class="xi-angle-right-min"></i>more</a
+                        >
+                    </div>
+                    <div id="news_modul" class="news_modul">
+                        <p>
+                        <span>지금 보러가기</span></a
+                            >
+                        </p>
+                    </div>
+                    <div id="n-wrap">
+                        <div class="news news_box01">
+                            <img src="img/news/news1.png" alt="" />
+                            <div class="con">
+                                <p class="n1">
+                                    <b>새삶스럽게, 집의 가능성을 발견하세요</b><br />
+                                    옷장 속 물건을 스마트하게 정돈해 보세요.<br />
+                                    지퍼 있는 수납함에 옷을 분류해두면 갑자기 비가 오거나<br />
+                                    추워진 날씨에도 알맞은 두께의 옷으로 꺼내 입을 수 있죠.
+                                </p>
+                                <a href="javascript:void(0);"><img src="img/icon/icon_link.png"></a>
+                            </div>
+                        </div>
+                        <div class="news news_box02">
+                            <img src="img/news/news2.png" alt="" />
+                                <div class="con">
+                                <p class="n1">
+                                    <b>홈퍼니싱 솔루션</b><br />
+                                    새해 맞이 청소할 시간이 왔어요!<br />
+                                    청소용품이 잘 정리되어 있으면<br />
+                                    청소할 마음을 먹기도 한결 쉬워져요.
+                                </p>
+                                <a href="javascript:void(0);"><img src="img/icon/icon_link.png"></a>
+                            </div>
+                        </div>
+                        <div class="news news_box03">
+                            <img src="img/news/news3.png" alt="" />
+                            <div class="con">
+                                <p class="n1">
+                                    <b>로맨틱한 밸런타인데이 선물</b><br />
+                                    사랑으로 가득한 밸런타인데이를 위한 선물 아이디어를 만나보세요!<br />
+                                    로맨틱한 하루를 제공해 줄 제품이 모두 준비되어 있어요.
+                                </p>
+                                <a href="javascript:void(0);"><img src="img/icon/icon_link.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer id="footer" class="ft">
+                <div class="f-top">
+                    <div class="inner-list">
+                        <ul>
+                            <li>
+                                <a href="#f-sub-1">고객문의<i class="xi-angle-down"></i></a>
+                                <ol id="f-sub-1">
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 고객지원</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 자주 묻는 질문</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 문의하기</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 배송조회</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 교환환불</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 제품리콜</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 부품 신청</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 피드백</a
+                                        >
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <a href="#f-sub-2">쇼핑하기<i class="xi-angle-down"></i></a>
+                                <ol id="f-sub-2">
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 쇼핑하기</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 전화 주문</a
+                                        >
+                                    </li>
+ 
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> IKEA for Business</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> IKEA 모바일 앱</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 온라인 플래닝</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> IKEA 카탈로그</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 결제 옵션</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 제품 사용 팁/가이드</a
+                                        >
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <a href="#f-sub-3">IKEA 서비스<i class="xi-angle-down"></i></a>
+                                <ol id="f-sub-3">
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> IKEA 서비스</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 배송 서비스</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 조립 서비스</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 설치 서비스</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 주방 서비스</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 인테리어 디자인 서비스</a
+                                        >
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <a href="#f-sub-4">IKEA 이야기<i class="xi-angle-down"></i></a>
+                                <ol id="f-sub-4">
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 브랜드 소개</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 집에서의 삶</a
+                                        >
+
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 지속가능한 생활</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 뉴스룸</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            ><i class="xi-play"></i> 채용정보</a
+                                        >
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inner-icons">
+                        <div class="ft-icons-left">
+                            <a href="javascript:void(0);"><i class="xi-facebook"></i></a>
+                            <a href="javascript:void(0);"><i class="xi-instagram"></i></a>
+                            <a href="javascript:void(0);"><i class="xi-youtube-play"></i></a>
+                        </div>
+                        <div class="ft-icons-right">
+                            <label for="languageChange">국가변경</label>
+                            <select id="languageChange">
+                                <option value="javascript:void(0);">한국어</option>
+                                <option value="javascript:void(0);">English</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="f-bottom">
+                    <!-- address태그로 변경하기 -->
+                    <address>
+                        <span>IKEA 코리아</span> 주소 : (우) 14352 경기도 광명시 일직로 17
+                        IKEA광명점<br />
+                        사업자 등록번호 : 106-86-82871
+                        <a
+                            href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1068682871"
+                            target="_blank"
+                        >
+                            사업자정보확인 </a
+                        ><br />
+                        대표자 : 프레드리크 요한손 <br />
+                        통신판매업 신고 : 2018-경기광명-0209 <br />
+                        TEL : 1670-4532
+                    </address>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

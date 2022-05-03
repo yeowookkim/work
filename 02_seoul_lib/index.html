@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="서울 도서관" />
+    <meta name="keywords" content="서울도서관, 서울 도서관, 서울도서관 홈페이지, 서울, 서울시 대표도서관, 대표도서관, 도서검색" />
+    <meta name="title" content="서울 도서관">
+    <meta name="apple-mobile-web-app-title" content="서울 도서관">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>서울도서관</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!--헤더-->
+        <header id="header">
+            <div class="header">
+                <div class="header-top">
+                    <div class="layout">
+                        <p><em>2월 14일</em> 오늘은 휴관일입니다.</p>
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">내서재</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-center">
+                    <a href="#"><img src="img/logo/logo.gif" alt="서울 도서관"></a>
+                </div>
+                <div class="header-btn">
+                    <div class="layout">
+                        <ul>
+                            <li><a href="#">자료검색</a></li>
+                            <li><a href="#">전자도서관</a></li>
+                            <li><a href="#">도서관 이용</a></li>
+                            <li><a href="#">프로그램</a></li>
+                            <li><a href="#">도서관 소개</a></li>
+                            <li><a href="#">도서관 정책</a></li>
+                        </ul>
+                        <div class="ham-menu"><a href="#"><img src="img/icon/menu.png" alt="hamburger_menu"></a></div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!--검색-->
+        <div id="find">
+            <div class="layout">
+                <div class="find">
+                    <div class="select">
+                        <label for="udate" class="ir_su">자료검색</label>
+                        <select id="udata" name="udata" class="select1">
+                            <option value="오전 0:00">자료검색</option>
+                            <option value="오전 1:00">자료검색</option>
+                            <option value="오전 2:00">자료검색</option>
+                        </select>
+                    </div>
+                    <div class="search">
+                        <label for="utext" class="ir_su">검색어를 입력해주세요.</label>
+                        <input type="text" id="utext" name="utext" class="input2" placeholder="검색어를 입력해주세요.">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--배너-->
+        <banner id="banner">
+            <div class="layout">
+                <div class="banner-main">
+                    <div class="text">
+                        <em>행사</em>
+                        <em>전시</em>
+                        <p>공연 + </p>
+                    </div>
+                    <!-- <div class="slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="layout">
+
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="banner-img">
+                        <div class="prev"><a href="#" class="ir_su"> 이전</a></div>
+                        <a href="#"><img src="img/event/e1.jpg" alt="장애인 인식개선강좌 영화 속 장애인 이야기"></a>
+                        <a href="#"><img src="img/event/e2.jpg" alt="내 손에서 시작해 함께 하는, 디자인씽킹"></a>
+                        <a href="#"><img src="img/event/e3.png" alt="빅데이터, 어떻게 세상을 바꾸고 있는가? : 4차 산업혁명과 빅데이터의 아픔"></a>
+                        <a href="#" class="ir_so"><img src="img/event/e4.jpg"
+                                alt="디지털 사회혁신 체험프로그램. 메타버스가 만드는 가장 경제의 시대가 온다"></a>
+                        <a href="#" class="ir_so"><img src="img/event/e5.png" alt="플랫폼의 생각법 2.0 11월 디지털사회혁신 체험프로그램"></a>
+                        <div class="next"><a href="#" class="ir_su"> 다음</a></div>
+                    </div>
+                </div>
+            </div>
+        </banner>
+
+        <!--아이콘-->
+        <content id="icon">
+            <div class="layout">
+                <div class="icon">
+                    <ul>
+                        <li><a href="#"><img src="img/menu/btn_icon_1.gif" alt="도서관이용시간">도서관이용시간</a></li>
+                        <li><a href="#"><img src="img/menu/btn_icon_2.gif" alt="회원증발급">회원증발급</a></li>
+                        <li class="icon4"><a href="#"><img class="img" src="img/menu/btn_icon_3.gif"
+                                    alt="대출, 연장, 예약, 반납"><em>대출 </em> 연장 </br> <em>예약 </em> 반납</a></li>
+                        <li><a href="#"><img src="img/menu/btn_icon_4.gif" alt="도서관에티켓">도서관에티켓</a></li>
+                        <li><a href="#"><img src="img/menu/btn_icon_7.gif" alt="자주 물어보는 질문">자주 물어보는 질문</a></li>
+                        <li><a href="#"><img src="img/menu/btn_icon_8.gif" alt="찾아오시는 길">찾아오시는 길</a></li>
+                    </ul>
+                </div>
+                <!--모바일 아이콘-->
+                <div class="m-icon">
+                    <ul>
+                        <li><a href="#"><img src="img/menu/premium-icon-atm-card-5307014.png" alt="회원증발급">회원증발급</a></li>
+                        <li><a href="#"><img src="img/menu/book.png" alt="대출예약, 연장"><em>대출예약</em> 연장</a></li>
+                        <li><a href="#"><img src="img/menu/heart.png" alt="희망도서신청">희망도서신청</a></li>
+                        <li><a href="#"><img src="img/menu/teachings.png" alt="프로그램신청">프로그램신청</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </content>
+
+        <!-- 공지 -->
+        <div id="notice">
+            <div class="layout">
+                <div class="row">
+                    <div class="notice">
+                        <h2 class="notice-title">
+                            <span>공지사항</span>
+                            <a href="#" class="more"><span class="ir_su">더보기</span></a>
+                        </h2>
+                        <ul class="notice-list">
+                            <li class="ntc1">
+                                <a href="#">서울도서관 방역패스 유효기간 적용 안내</a>
+                                <span class="notice-date">2022-00-00</span>
+                            </li>
+                            <li class="ntc2">
+                                <a href="#">2022년 설 명절 연휴 서비스 운영 안내</a>
+                                <span class="notice-date">2022-00-00</span>
+                            </li>
+                            <li class="ntc3">
+                                <a href="#">방역패스 적용에 따른 도서관 이용시간이용시간</a>
+                                <span class="notice-date">2022-00-00</span>
+                            </li>
+                            <li class="ntc4">
+                                <a href="#">방역패스 적용에 따른 도서관 이용시간이용시간</a>
+                                <span class="notice-date">2022-00-00</span>
+                            </li>
+                        </ul>
+                        <div class="ntc-num">
+                            <ul>
+                                <li class="on">
+                                    <button type="button" role="tab"></button>
+                                </li>
+                                <li>
+                                    <button type="button" role="tab"></button>
+                                </li>
+                                <li>
+                                    <button type="button" role="tab"></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide-banner">
+                        <div class="side-slide">
+                            <ul>
+                                <li class="on">
+                                    <a href="#"><img src="img/banner/b1.jpg" alt="서울도서관 온라인전시 내 책 속 한 문장"></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/banner/b2.jpg"
+                                            alt="매월 22일 불을 끄고 행복해지는 1시간, 1시간(저녁 8~9시) 동안 전등을 꺼주세요.">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/banner/b3.jpg" alt="신종 코로나바이러스 감염증 예방 행동수칙">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/banner/b4.jpg"
+                                            alt="아 맞다 내 회원증! 깜~빡 잊었나요? 분실하셨나요? 서울시민카드앱을 사용해보세요! 서울의 공공시설 회원증을 하나로!">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/banner/b5.jpg"
+                                            alt="마스크 하자, 손 씻기 하자, 환기소독 하자, 진담검사 하자 자율방역 실천! 슬기로운 일상생활의 시작입니다.">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="bar">
+                                <div>
+                                    <span class="num">
+                                        <span class="on count">1</span> | <span class="total">1</span>
+                                    </span>
+                                    <a href="#" class="prev ir_pm" title="이전">이전</a>
+                                    <a href="#" class="stop ir_pm" title="자동 롤링 정지">정지</a>
+                                    <a href="#" class="play ir_pm" title="자동 롤링 시작" style="display: none;">시작</a>
+                                    <a href="#" class="next ir_pm" title="다음">다음</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 모바일용 -->
+        <div id="m-book-rcmd">
+            <div class="layout">
+                <div class="row">
+                    <div class="m-book-rcmd">
+                        <!-- 모바일 새로 들어온 책 -->
+                        <div class="m-new-book">
+                            <div class="m-book-title">
+                                <h2>
+                                    <span>새로 들어온 책</span>
+                                    <a href="#" class="more"><span>더보기</span></a>
+                                </h2>
+                            </div>
+                            <div class="m-book-list">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="img/book/모바일/2.png" alt="오일파스텔로 그리는 카페 드로잉">
+                                            <p>오일파스텔로 그리는 카페 드로잉 </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/book/모바일/1.png"
+                                                alt="무면허 번역가로 9년째, 러브콜이 너무 많아 피곤...">
+                                            <p>무면허 번역가로 9년째, 러브콜이 너무 많아 피곤... </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 모바일 대출이 많은 책 -->
+                        <div class="m-best-book">
+                            <div class="m-book-title">
+                                <h2>
+                                    <span>대출이 많은 책</span>
+                                    <a href="#" class="more"><span>더보기</span></a>
+                                </h2>
+                            </div>
+                            <div class="m-book-list">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="img/book/모바일/3.png" alt="여행의 이유김영하 산문">
+                                            <p>여행의 이유
+                                                김영하 산문</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/book/모바일/4.png"
+                                                alt="나미야 잡화점의 기적 히가시노 게이고 장편소설">
+                                            <p>나미야 잡화점의 기적 히가시노 게이고 장편소설</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 독서문화 -->
+        <div id="culture">
+            <div class="layout">
+                <div class="row">
+                    <div class="culture">
+                        <div class="culture-title">
+                            <h2>
+                                <span>독서문화</span>
+                                <a href="#" class="more"><span>더보기</span></a>
+                            </h2>
+                        </div>
+                        <div class="culture-list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/culture/c1.png" alt="시민이 제안하는 새로운 도서관, Why not Library">
+                                        <p>시민이 제안하는 새로운 도서관, Why not Library!</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/culture/c2.png" alt="[책피는 서울도서관]북큐레이션 2월">
+                                        <p>[책피는 서울도서관]북큐레이션 2월</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/culture/c4.png" alt="2021 서울지식이음포럼 : 시민이 만들어나가는 새로운 포럼">
+                                        <p>2021 서울지식이음포럼 : 시민이 만들어나가는 새로운 포럼</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/culture/c5.png"
+                                            alt="LINK REVOLUTION 시민 제안 서비스 - 슬.마.생 : 키워드 기반 도서내용 검색 서비스">
+                                        <p>LINK REVOLUTION 시민 제안 서비스 - 슬.마.생 : 키워드 기반 도서내용 검색 서비스</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="m-culture-list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/culture/c6.png"
+                                            alt="LINK REVOLUTION 시민 제안 서비스 - 슬.마.생 : 키워드 기반 도서내용 검색 서비스">
+                                        <div>
+                                            <em>DSI JAM 2021</em>
+                                            <p>디지털 사회혁신 전문가 클로징 세션</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/culture/c3.png"
+                                            alt="LINK REVOLUTION 시민 제안 서비스 - 슬.마.생 : 키워드 기반 도서내용 검색 서비스">
+                                        <div>
+                                            <em>책피는 서울도서관</em>
+                                            <p>북 큐레이션 1</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 책 추천 -->
+        <div id="book-rcmd">
+            <div class="layout">
+                <div class="row">
+                    <div class="book-rcmd">
+                        <ul class="book-siled">
+                            <li class="active"><a href="#" class="book-title">새로 들어온 책</a>
+                                <ul class="new-book ">
+                                    <li><a href="#" class="book-list"><img src="img/book/new/newbook1.gif"
+                                                alt="행복은 어디에나 있어"></a></li>
+                                    <li><a href="#" class="book-list"><img src="img/book/new/newbook2.gif"
+                                                alt="이렇게 오랫동안 못 갈 줄 몰랐습니다"></a></li>
+                                    <li><a href="#" class="book-list"><img src="img/book/new/newbook3.gif"
+                                                alt="왜 독서와 토록이 최고의 공부인가"></a></li>
+                                    <li><a href="#" class="book-list"><img src="img/book/new/newbook4.gif"
+                                                alt="용담유사"></a></li>
+                                    <li><a href="#" class="book-list"><img src="img/book/new/newbook5.gif"
+                                                alt="탐소중립 소수혁명"></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="book-title">대출이 많은 책</a>
+                                <ul class="best-book" style="display: none;">
+                                    <li><a href="#" class="book-list"><img src="img/book/best/bestbook1.gif"
+                                                alt="총균쇠"></a></li>
+                                    <li><a href="#" class="book-list"><img src="img/book/best/bestbook2.gif"
+                                                alt="여행의 이유"></a></li>
+                                    <li><a href="#" class="book-list"><img src="img/book/best/bestboo3.gif"
+                                                alt="선량한 차별주의자"></a></li>
+                                    <li><a href="#" class="book-list"><img src="img/book/best/bestbook4.gif"
+                                                alt="TEH SELFISH GENE"></a></li>
+                                    <li><a href="#" class="book-list"><img src="img/book/best/bestbook5.gif"
+                                                alt="소년이 온다"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="book-num">
+                            <ul>
+                                <li class="on">
+                                    <button type="button" role="tab"></button>
+                                </li>
+                                <li>
+                                    <button type="button" role="tab"></button>
+                                </li>
+                                <li>
+                                    <button type="button" role="tab"></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!--모바일 햄버거 메뉴-->
+        <div class="back" style="display: none;">
+            <div class="m-ham">
+                <div class="ham-top">
+                    <p>로그인</p>
+                    <p>회원가입</p>
+                    <p>사이트맵</p>
+                </div>
+                <ul class="m-list">
+                    <li>
+                        <p>도서관 안내</p>
+                        <img src="img/icon/free-icon-right-arrow-271228.png" alt="내리기">
+                    </li>
+                    <li>
+                        <p>자료검색</p>
+                        <img src="img/icon/free-icon-right-arrow-271228.png" alt="내리기">
+                    </li>
+                    <li>
+                        <p>프로그램</p>
+                        <img src="img/icon/free-icon-right-arrow-271228.png" alt="내리기">
+                    </li>
+                    <li>
+                        <p>도서관 서비스</p>
+                        <img src="img/icon/free-icon-right-arrow-271228.png" alt="내리기">
+                    </li>
+                    <li>
+                        <p>열린 마당</p>
+                        <img src="img/icon/free-icon-right-arrow-271228.png" alt="내리기">
+                    </li>
+                    <li>
+                        <p>내 서재</p>
+                        <img src="img/icon/free-icon-right-arrow-271228.png" alt="내리기">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--행사-->
+        <div class="main-bottom">
+            <div class="layout">
+                <ul class="book">
+                    <li class="link01"><a href="http://seoul-ieum.kr/2021/" target="_blank" title="새창 열림">지식이음축제</a></li>
+                    <li class="link02"><a href="http://www.seoulbookbogo.kr/front" target="_blank" title="새창 열림">서울책보고</a></li>
+                    <li class="link03"><a href="/slibsrch/main"><span class="m-block">서울의 도서관 찾기</span></a></li>
+                    <li class="link04"><a href="/bookstore/main"><span class="m-block">서울의 책방 찾기</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--푸터-->
+        <footer id="footer">
+            <div class="footer">
+                <div class="footer-top">
+                    <div class="layout">
+                        <div class="footer-law">
+                            <p style="font-size:18px";>개인정보처리방침</p>
+                            <p style="font-size:18px";>영상정보기기 운영 관리방침</p>
+                        </div>
+
+                            <div class="footer-select">
+                                <div class="familySite">
+                                    <select class="seoul-webpage-select" title="서울시 연관사이트">
+                                        <option value="http://www.seoul.go.kr">서울시홈페이지</option>
+                                        <option value="http://ebook.seoul.go.kr">서울시 e-BOOK</option>
+                                        <option value="http://www2.seoul.go.kr/web2004/seoul/citynews/sibo">서울시보
+                                        </option>
+                                        <option value="http://legal.seoul.go.kr">서울시법무행정(자치법규)</option>
+                                        <option value="http://store.seoul.go.kr">서울책방(서울시간행물판매)</option>
+
+                                        <option value="http://gis.seoul.go.kr">스마트서울맵</option>
+                                        <option value="http://www.museum.seoul.kr">서울역사박물관</option>
+                                        <option value="http://www.sdi.re.kr">서울연구원</option>
+                                        <option value="http://historylib.seoul.go.kr">서울역사편찬원 자료실</option>
+                                        <option value="http://gwanbo.mois.go.kr/main.do">대한민국 전자관보</option>
+
+                                        <option value="http://www.riss4u.net/index.jsp">한국교육학술정보원</option>
+                                        <option value="http://www.koreastudy.or.kr">한국국학진흥원</option>
+                                        <option value="https://www.ltikorea.or.kr">한국문학번역원</option>
+                                    </select>
+                                </div>
+                                <button class="seoul-webpage-go" title="선택한 사이트 이동 (새 창 열림)">GO</button>
+                            </div>
+                            <div class="footer-select">
+                                <div class="familySite">
+                                    <select class="lib-webpage-select" title="연관 도서관 사이트">
+                                        <option value="">도서관 홈페이지</option>
+                                        <option value="http://www.nl.go.kr">국립중앙도서관</option>
+                                        <option value="http://www.nanet.go.kr">국회도서관</option>
+                                        <option value="http://library.smc.seoul.kr">서울시의회 전문도서관</option>
+                                        <option value="https://lib.seoul.go.kr/slibsrch/main">서울의 도서관 찾기</option>
+                                    </select>
+                                </div>
+                                <button class="lib-webpage-go" title="선택한 사이트 이동 (새 창 열림)">GO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-main">
+                    <div class="layout">
+
+                        <div class="footer-logo">
+                            <img src="img/logo/ft_logo.png" alt="I SEOUL U">
+                        </div>
+                        <div class="footer-text">
+                            <p style="font-size:15px";><strong>서울도서관</strong> 서울특별시 중구 세종대로 110 <br>
+                                <strong>전화번호</strong> : 02-120, 02-2133-0300<br>
+                                <strong>이용시간</strong> : 화~금 09:00~21:00 / 토, 일 09:00~18:00 / 월요일, 공휴일 휴관</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!--모바일 회원증-->
+        <div id="member" >
+            <div class="member">
+                <a href="#"> 모바일 회원증</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--자바스크립트-->
+    <script>
+       
+    </script>
+
+</body>
+
+</html>

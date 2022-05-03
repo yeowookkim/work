@@ -1,0 +1,1007 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+.warp {}
+
+/* 레이아웃 */
+body {}
+
+#notice {
+    width: 100%;
+    height: 400px;
+    background-color: #b2dcef;
+    padding-top: 34px;
+}
+
+#culture {}
+
+#book-rcmd {
+    width: 100%;
+    height: 720px;
+    background-color: #b2dcef;
+
+}
+
+#m-book-rcmd {}
+
+/* 컨테이너 */
+.layout {
+    position: relative;
+    width: 1320px;
+
+    margin: 0 auto;
+}
+
+.row {
+    margin-left: 50px;
+}
+
+/* 공통 */
+.more {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: url(../서울도서관/img/icon/plus.png) no-repeat center;
+    background-size: 36px;
+    width: 36px;
+    height: 36px;
+}
+
+/* 공지사항 */
+.notice {
+    float: left;
+    width: 50%;
+}
+
+.notice .notice-title {
+    position: relative;
+    height: 75px;
+    border-bottom: 4px solid #0088CB;
+    margin-right: 80px;
+}
+
+.notice-title span {
+    font-size: 36px;
+    font-weight: 500;
+    color: #191919;
+}
+
+
+
+.notice ul.notice-list {
+    margin-top: 24px;
+    width: 560px;
+}
+
+.notice-list li {
+    font-size: 24px;
+    color: #767676;
+    overflow: hidden;
+    letter-spacing: 0px;
+    padding-left: 8px;
+    padding-bottom: 20px;
+}
+
+.notice-list li a {
+    float: left;
+    color: #767676;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice-list li span {
+    float: right;
+    margin-left: 16px;
+    width: 25%;
+}
+
+.notice .ntc-num {
+    display: none;
+}
+
+#notice .slide-banner {
+    float: right;
+    width: 50%;
+    margin-top: 16px;
+}
+
+#notice .slide-banner::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.slide-banner .side-slide {
+    position: relative;
+
+}
+
+.side-slide ul {}
+
+.side-slide ul li {
+    display: none;
+}
+
+.side-slide ul li.on {
+    display: block;
+}
+
+.side-slide ul li a {
+    width: 100%;
+}
+
+.side-slide ul li img {
+    width: 560px;
+    height: 300px;
+
+}
+
+.side-slide .bar {
+    text-align: right;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background: rgba(00, 97, 125, 0.4);
+    width: 560px;
+    height: 42px;
+    padding: 6px 0;
+    vertical-align: middle;
+}
+
+.side-slide .bar>div {
+    padding: 0 12px;
+}
+
+.side-slide .bar .num {
+    color: #FFF;
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+.side-slide .bar .num .on {
+    color: #ffe5aa;
+}
+
+.side-slide .bar a {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.prev {
+    width: 8px;
+    height: 15px;
+    background: url('../서울도서관/img/icon/prev.png') no-repeat center;
+    /* margin-right: 10px; */
+}
+
+.stop {
+    width: 8px;
+    height: 15px;
+    background: url('../서울도서관/img/icon/stop.png') no-repeat center;
+}
+
+.play {
+    width: 8px;
+    height: 15px;
+    background: url('../서울도서관/img/icon/play.png') no-repeat center;
+    margin-right: 5px;
+}
+
+.next {
+    width: 8px;
+    height: 15px;
+    background: url('../서울도서관/img/icon/next.png') no-repeat center;
+    margin-right: 5px;
+}
+
+/* 독서문화 */
+.culture {
+    margin-top: 80px;
+}
+
+.culture .culture-title {
+    position: relative;
+    height: 75px;
+    margin: 0 auto;
+    border-bottom: 4px solid #0088CB;
+
+
+}
+
+.culture-title h2 {}
+
+.culture-title h2 span {
+    font-size: 36px;
+    font-weight: 500;
+    color: #191919;
+}
+
+
+
+.culture .culture-list {
+    padding-top: 50px;
+}
+
+.culture-list ul {
+    text-align: center;
+
+}
+
+.culture-list li {
+    display: inline-block;
+    margin: 0 20px;
+
+}
+
+.culture-list li a {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.culture-list li a p {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    display: none;
+    opacity: 1;
+
+}
+
+.culture-list li a:hover p {
+    text-align: center;
+    justify-items: center;
+    display: inline-block;
+}
+
+.culture-list li a:hover img {
+    filter: brightness(50%);
+}
+
+.culture-list li a img {
+    width: 200px;
+    height: 200px;
+}
+
+/* 책 추천 웹 */
+.book-rcmd {
+    margin-top: 50px;
+    position: relative;
+}
+
+.book-rcmd .book-siled {
+    padding-top: 130px;
+
+}
+
+.book-rcmd .book-siled li {}
+
+.book-rcmd .book-siled li.active a {
+    color: #004587;
+}
+
+.book-rcmd .book-siled li .book-title {
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 60px;
+    display: block;
+
+}
+
+.book-rcmd .book-siled li ul {
+    margin-top: 130px;
+    position: absolute;
+    top: 0;
+    left: 300px;
+
+}
+
+.book-rcmd .book-siled li ul li {
+    float: left;
+
+}
+
+.book-rcmd ul li ul li::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.book-rcmd ul li ul li .book-list {}
+
+.book-rcmd ul li ul li:nth-child(n+4) {
+    display: none;
+}
+
+.book-rcmd .book-siled li li a img {
+    margin-right: 50px;
+    width: 270px;
+    height: 460px;
+}
+
+.book-num {}
+
+.book-num ul {
+    margin-left: 110px;
+}
+
+.book-num ul li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.book-num ul li.on {
+    border-radius: 50%;
+    width: 40px;
+    height: 20px;
+    background-color: #004587;
+}
+
+/* 모바일용 독서문화 */
+.m-culture-list {}
+
+.m-culture-list ul {
+    text-align: center;
+}
+
+.m-culture-list ul li {
+    width: 80%;
+    margin: 0 auto;
+    display: inline-block;
+
+
+}
+
+.m-culture-list ul li a {
+    height: 140px;
+
+}
+
+.m-culture-list ul li a img {
+    float: left;
+    width: 150px;
+    height: 150px;
+
+}
+
+.m-culture-list ul li a img::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.m-culture-list ul li a>div {
+    text-align: left;
+    margin-left: 40%;
+    margin-top: 25px;
+    height: 150px;
+}
+
+
+.m-culture-list ul li a>div em {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.m-culture-list ul li a>div p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* 모바일용 책 추천 */
+.m-book-rcmd {}
+
+.m-new-book {
+    margin-top: 80px;
+}
+
+.m-book-rcmd .m-book-title {
+    position: relative;
+    height: 75px;
+    margin-right: 35px;
+}
+
+.m-book-rcmd .m-book-title h2 {}
+
+.m-book-rcmd .m-book-title h2>span {
+    font-weight: 700;
+    font-size: 36px;
+    margin-left: 41px;
+}
+
+.m-book-rcmd .m-book-title h2 a {
+    background: none;
+    width: 130px;
+}
+
+.m-book-rcmd .m-book-title h2 a>span {
+    font-size: 22px;
+    color: #999;
+    font-weight: 400;
+    margin-left: 40px
+}
+
+.m-best-book {
+    padding-top: 80px;
+}
+
+.m-book-list {}
+
+.m-book-list ul {
+    overflow: hidden;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.m-book-list ul li {
+    float: left;
+    width: 45%;
+
+}
+
+.m-book-list ul li a {
+    display: inline-block;
+    text-align: center;
+
+
+}
+
+.m-book-list ul li a img {
+    width: 200px;
+    height: 272px;
+}
+
+.m-book-list ul li a p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+
+/* 미디어쿼리 */
+@media (max-width: 1320px) {
+
+    /* 공지사항  */
+    .layout {
+        width: 100%;
+    }
+
+    .notice {}
+
+    #notice .slide-banner {
+        width: 50%;
+    }
+
+    .side-slide ul li img {
+        max-width: 90%;
+    }
+
+    .side-slide .bar {
+        max-width: 90%;
+    }
+
+    .notice .notice-title {
+        margin-right: 80px;
+    }
+
+    .notice ul.notice-list {
+        width: 90%;
+    }
+
+    .notice-list li a {
+        width: 65%;
+    }
+
+    .notice-list li span {
+        float: none;
+    }
+
+    /* 독서문화 */
+    .culture .culture-title {
+        margin-right: 35px;
+    }
+
+    .culture-list ul {
+        margin-right: 35px;
+    }
+
+    .culture-list li {}
+
+    /* 책 추천 */
+    .book-rcmd .book-siled li ul {
+        left: 250px;
+    }
+
+    .book-rcmd .book-siled li li a img {
+        margin-right: 20px;
+        width: 250px;
+        height: 425px;
+    }
+}
+
+@media (max-width: 1130px) {
+    /* 공지사항  */
+
+    .slide-banner {
+        display: none;
+    }
+
+    #notice .row {
+        margin-left: 0;
+    }
+
+    .notice {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15%;
+    }
+
+    .notice .notice-title {
+        border: none;
+        margin-right: 118px;
+    }
+
+    .notice-title span {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .notice-title .more {
+        background-image: none;
+        background: url(../서울도서관/img/icon/Mplus.png) no-repeat center;
+        background-size: 45px;
+        margin-right: -115px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .notice ul.notice-list {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+
+
+    }
+
+    .notice-list ul {}
+
+    .notice-list li {
+        font-size: 20px;
+        font-weight: 500;
+        width: 45%;
+        height: 175px;
+        border-bottom: 3px solid #707070;
+        border-top: 3px solid #707070;
+        display: inline-block;
+        padding-top: 30px;
+        margin-right: 5%;
+
+    }
+
+    .notice-list li:nth-child(2) {
+        margin-right: 0;
+    }
+
+
+    .notice-list li a {
+        float: none;
+        color: #191919;
+        white-space: normal;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        width: 75%;
+    }
+
+    .notice-list li span {
+        float: none;
+        font-weight: 500;
+        width: 100%;
+        margin-left: 13px;
+        margin-top: 13px;
+        display: inline-block;
+
+    }
+
+    .notice-list li::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+    .notice-list .ntc3 {
+        display: none;
+    }
+
+    .notice-list .ntc4 {
+        display: none;
+    }
+
+    .notice .ntc-num {
+        display: block;
+
+    }
+
+    .notice .ntc-num ul {
+        position: absolute;
+        margin-top: 24px;
+        text-align: right;
+        right: 20%;
+    }
+
+    .notice .ntc-num ul li {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border: 2px solid #707070;
+        border-radius: 50%;
+        margin-right: 2px;
+    }
+
+    .notice .ntc-num ul li.on {
+        width: 45px;
+        height: 30px;
+        border: 2px solid #004587;
+        background-color: #004587;
+    }
+
+    /* 책 추천 */
+    .book-rcmd .book-siled li ul {
+        left: 250px;
+    }
+
+    .book-rcmd .book-siled li li a img {
+        margin-right: 20px;
+        width: 210px;
+        height: 357px;
+    }
+
+    #book-rcmd {
+        height: 650px;
+    }
+
+}
+
+@media (max-width: 1070px) {
+    .culture-list li:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 1020px) {
+
+    /* 공지사항  */
+    .notice-list li a {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    /* 책 추천 */
+
+    .book-rcmd .book-siled li ul {
+        left: 250px;
+    }
+
+    .book-rcmd .book-siled li li a img {
+        margin-right: 20px;
+        width: 180px;
+        height: 306px;
+    }
+
+    #book-rcmd {
+        height: 590px;
+    }
+}
+
+@media (max-width: 920px) {
+
+    /* 책 추천 */
+    .book-rcmd .book-siled li .book-title {
+        font-size: 30px;
+    }
+
+    .book-rcmd .book-siled li ul {
+        left: 200px;
+    }
+
+    .book-rcmd .book-siled li li a img {
+        margin-right: 20px;
+        width: 180px;
+        height: 306px;
+    }
+
+    #book-rcmd {
+        height: 590px;
+    }
+
+    .book-num ul {
+        margin-left: 75px;
+    }
+}
+
+@media (max-width: 870px) {
+    .book-rcmd .book-siled li .book-title {
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+
+    .book-rcmd .book-siled li ul {
+        left: 180px;
+    }
+
+    .book-rcmd .book-siled li li a img {
+        margin-right: 20px;
+        width: 150px;
+        height: 256px;
+    }
+
+    #book-rcmd {
+        height: 550px;
+    }
+
+
+}
+
+@media (max-width: 830px) {
+    .culture-list li {
+        margin: 0 10px;
+    }
+
+    .culture-list li a img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+@media (max-width: 760px) {
+
+    /* 공지사항  */
+    #notice {
+        height: 400px;
+    }
+
+    #notice .row {
+        margin-left: 50px;
+    }
+
+    .notice {}
+
+    .notice .notice-title {
+        height: 60px;
+    }
+
+    .notice-title span {
+        font-weight: 700;
+        font-size: 36px;
+    }
+
+
+
+    .notice ul.notice-list {
+        margin-top: 41px
+    }
+
+    .notice-list li {
+        height: 170px;
+        font-size: 20px;
+        font-weight: 500;
+
+
+    }
+
+    .notice-list li span {
+        font-size: 17px;
+    }
+
+
+    .notice .ntc-num ul {
+        margin-top: 24px;
+    }
+
+    .notice .ntc-num ul li {
+        width: 25px;
+        height: 25px;
+    }
+
+    .notice .ntc-num ul li.on {
+        width: 35px;
+        height: 25px;
+    }
+
+    /* 독서문화 */
+    .culture .culture-title {
+        border: none;
+    }
+
+    .culture-title h2 span {
+        font-weight: 700;
+        font-size: 36px;
+        margin-left: 40px;
+    }
+
+    .culture-title h2 a.more {
+        background: none;
+        width: 130px;
+    }
+
+    .culture-title h2 a span {
+        font-size: 22px;
+        color: #999;
+        font-weight: 400;
+
+    }
+
+    .culture-list {
+        display: none;
+    }
+
+    /* 책 추천(모바일에서는 가리기) */
+    #book-rcmd {
+        display: none;
+    }
+}
+
+/* 모바일 외에 안보이는거 */
+@media (min-width: 760px) {
+    .culture-title h2 a span {
+        overflow: hidden;
+        position: absolute;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        text-indent: -9999px;
+    }
+
+    .m-culture-list {
+        display: none;
+    }
+
+    .m-book-rcmd {
+        display: none;
+    }
+}
+
+@media (max-width: 660px) {
+
+    /* 독서문화 */
+    .m-culture-list ul li a img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .m-culture-list ul li a>div {
+        margin-top: 15px;
+        margin-left: 40%;
+    }
+
+    .m-culture-list ul li a>div em {
+        font-size: 20px;
+    }
+
+    .m-culture-list ul li a>div p {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .m-book-list ul li a img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .m-book-list ul {
+        overflow: hidden;
+        margin-left: 50px;
+        padding-top: 20px
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* 공지사항  */
+    .notice {
+        padding: 0 10% 0 0;
+    }
+
+    .notice-title span {
+        font-size: 30px;
+    }
+
+    .notice-title .more {
+        background-size: 35px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .notice .notice-title {
+        margin-top: 20px;
+    }
+
+    .notice ul.notice-list {
+        margin-top: 30px;
+    }
+
+    /* 독서문화 */
+    .culture-title h2 span {
+        font-size: 30px;
+        margin-left: 0
+    }
+
+    .culture-title h2 a.more {
+        width: 70px;
+    }
+
+    .culture-title h2 a span {
+        font-size: 18px;
+    }
+
+    .m-culture-list ul li {
+        width: 90%;
+    }
+
+    .m-culture-list ul li a img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .m-culture-list ul li a>div {
+        margin-top: 15px;
+        margin-left: 40%;
+    }
+
+    .m-culture-list ul li a>div em {
+        font-size: 18px;
+    }
+
+    .m-culture-list ul li a>div p {
+        margin-top: 10px;
+        font-size: 13px;
+
+    }
+
+    /* 책 추천 */
+    .m-book-rcmd .m-book-title h2>span {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .m-book-rcmd .m-book-title h2 a>span {
+        width: 70px;
+        font-size: 18px;
+        margin-left: 80px;
+
+    }
+
+    .m-book-list ul {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 410px) {
+    .m-book-list ul li a img {
+        width: 140px;
+        height: 190px;
+    }
+}
